@@ -1,193 +1,45 @@
-
-/*Top right-corner icons*/
-.icon-text {
-text-decoration:none;
-border-radius: 20%;
-padding: 25% 5%;
-color:#000000DE;
-font-size: 13px;
-font-style: normal;
-font-family: Arial, sans-serif;
+.tab{
+    float: left;
+    border: 1px soild blanchedalmond;
+    background-color:cornflowerblue;
+    width:200px;
 }
-.icon-img-apps {
-width:20%;
-border-radius: 20%;
-padding: 20% 5%;
-
-}
-.icon-img-photo {
-width:20%;
-border-radius: 50%;
-padding: 20% 5%;
-}
-.search-input {
-position: absolute;
-border: none;
-background: none;
-outline: none;
-padding-top:10px;
-padding-left: 10px;
-width: 430px;
-
-}
-.search-icon {
-width:10px;
-padding-top:10px;
-padding-left: 1px;
-}
-.mcphone-search-icon {
-width:10px;
-padding-top:10px;
-padding-left: 450px;
-}
-.search-content {
-top: 50%;
-width: 375%;
-border-radius: 40px;
-text-align: center;
-border: 1em;
-border-color: slategray;
-display: flex;
-flex-direction: row;
-border: 1.5px solid #EBECEE;
-height:50px;
-}
-.links{
-font-size: 20px;
-font-style: normal;
-font-family: Arial, Helvetica, sans-serif;  
-padding: 1.5rem 1.0rem 0rem 0.5rem;
-color: black;
-line-height:20rem;
-}
-.button-label{
-background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-background-color: #f2f2f2;
-border: 1px solid #f2f2f2;
-border-radius: 4px;
-color: #5F6368;
-font-family: arial,sans-serif;
-margin: 3% 4% 5% 2%;
-padding: 10% 8% 10% 8%;
-padding-left: 50%;
-line-height: 10%;
-text-align: center;
-cursor: pointer;
-user-select: none;
-}
-
-/*
-.search-bottom {
-padding-top: 10px;
-padding-left: 10px;
-width:450%;
-}
-.lbl-text {
-color:#000000DE;
-font-size: 13px;
-font-style: normal;
-font-family: Arial, sans-serif;
-}
-.link-text {
-width:30px;
-border-radius: 20%;
-padding: 20px 5px;
-font-size: 13px;
-font-style: normal;
-font-family: Arial, sans-serif;
-}*/
-
-@media screen and (max-width: 5000px)  {
-
-.main-content { 
-    width: 10%;
-    height: 30%;
-   
-   
-}
-.icons-nav { 
-    width: 10%;
-    padding:1% 5% 8% 80%;
-    display: flex;
-    flex-direction: row;
-}
-.img-logo {
-    width:100%;
-   
-    }
-.search-button {
-    padding-top: 5%;
-    padding-left: 30%;
-    top: 20%;
-    z-index: 0;
-    display:flex;
-    flex-direction: row;
-    }
-}
-@media screen and (max-width: 1680px)  {
-
-.icons-nav { 
-width: 10%;
-padding:1% 5% 8% 85%;
-display: flex;
-flex-direction: row;
-}
-.img-logo {
-width:100%;
-/*padding :20% 10% 10% 80%;*/
-}
-.search-button {
-    padding-top: 5%;
-    padding-left: 30%;
-    top: 20%;
-    z-index: 0;
-    display:flex;
-    flex-direction: row;
-    }
-}
-
-@media screen and (max-width: 800px)  {
-.main-content { 
-    position: absolute;
-    width: 10%;
-    height: 30%;
-    top: 30%;
-    padding-left:30%;
-    padding-bottom: 10%;
-}
-.icons-nav { 
-    width: 10%;
-    padding:1% 5% 8% 85%;
-    display: flex;
-    flex-direction: row;
-}
-.img-logo {
-    width:250%;
-  
-    }
-.search-button {
-    padding-top: 5%;
-    padding-left: 20%;
-    top: 20%;
-    z-index: 0;
-    display:flex;
-    flex-direction: row;
-    }
-
-}
-.btns {
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
-    font-family: arial, sans-serif;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 16px;
-    /* line-height: 27px; */
-    height: 36px;
-    min-width: 54px;
-    /* text-align: center; */
+.tab button{
+    display: block;
+    background-color: inherit ;
+    color:black;
+    padding: 15px 15px;
+    width:200px;
+    border: none;
+    outline: none;
+    text-align: left;
     cursor: pointer;
-    /* user-select: none; */
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: lightskyblue;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+  
+}
+.alert{
+    padding:10px;
+    background-color:lightskyblue;
+    color: white;
 }

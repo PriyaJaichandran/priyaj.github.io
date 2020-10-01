@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="stylesheet" href="css/product.css">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <script type="text/javascript">
+            let cartItems=new Array();
+            function load(){
+                console.dir(document.body);//To print all the object properties and methods in the console.
+            } 
+            if(document.readyState==="loading"){
+                document.addEventListener("DOMContentLoaded",load); //To ensure the full page content is loaded and there will be no javascript error.
+            }else{
+                load();
+            }
+            function addToCart(obj){
+                if(cartItems.length >=10){
+                    alert("Exceeded maximum select"+cartItems);
+                    console.log("Selected cart items "+cartItems);//To print required log in console.
+                    console.error("Exceeded select cart limit!");//Prints defined error statement in console.
+                }else{
+                    if(cartItems.indexOf(obj)=== -1){
+                        cartItems.push(obj)
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body onload="load()">
+        <h1>Add products cart</h1>
+        <div>
+            <span>Select required products</span>
+            <div class="row">
+                <div class="column">
+                    <img id="1" src="images/img1.jpg" onclick="addToCart(this.id);">
+                    <img id="2" src="images/img2.jpg" onclick="addToCart(this.id);">
+                    <img id="3" src="images/img3.jpg" onclick="addToCart(this.id);">
+                    <img id="4" src="images/img4.jpg" onclick="addToCart(this.id);">
+                    <img id="5" src="images/img5.jpg" onclick="addToCart(this.id);">
+                    <img id="6" src="images/img6.jpg" onclick="addToCart(this.id);">
+                </div>
+                <div class="column">
+                    <img id="7" src="images/img7.jpg" onclick="addToCart(this.id);">
+                    <img id="8" src="images/img8.jpg" onclick="addToCart(this.id);">
+                    <img id="9" src="images/img9.jpg" onclick="addToCart(this.id);">
+                    <img id="10" src="images/img10.jpg" onclick="addToCart(this.id);">
+                    <img id="11" src="images/img11.jpg" onclick="addToCart(this.id);">
+                    <img id="12" src="images/img12.jpg" onclick="addToCart(this.id);">
+                </div>
+                <div class="column">
+                    <img id="13" src="images/img13.jpg" onclick="addToCart(this.id);">
+                    <img id="14" src="images/img14.png" onclick="addToCart(this.id);">
+                    <img id="15" src="images/img15.jpg" onclick="addToCart(this.id);">
+                    <img id="16" src="images/img16.jpg" onclick="addToCart(this.id);">
+                    <img id="17" src="images/img17.jpg" onclick="addToCart(this.id);">
+                    <img id="18" src="images/img18.png" onclick="addToCart(this.id);">
+                </div>
+                <div class="column">
+                    <img id="19" src="images/img19.jpg" onclick="addToCart(this.id);">
+                    <img id="20" src="images/img20.jpg" onclick="addToCart(this.id);">
+                    <img id="21" src="images/img21.jpg" onclick="addToCart(this.id);">
+                    <img id="22" src="images/img22.jpeg" onclick="addToCart(this.id);">
+                    <img id="23" src="images/img23.jpg" onclick="addToCart(this.id);">
+                    <img id="24" src="images/img24.jpg" onclick="addToCart(this.id);">
+                </div>
+                <div class="column">
+                    <img id="25" src="images/img25.jpg" onclick="addToCart(this.id);">
+                    <img id="26" src="images/img26.png" onclick="addToCart(this.id);">
+                    <img id="27" src="images/img27.jpg" onclick="addToCart(this.id);">
+                    <img id="28" src="images/img28.jpg" onclick="addToCart(this.id);">
+                    <img id="29" src="images/img29.jpg" onclick="addToCart(this.id);">
+                    <img id="30" src="images/img30.jpeg" onclick="addToCart(this.id);">
+                </div>
+                <div class="column">
+                    <img id="31" src="images/img31.jpg" onclick="addToCart(this.id);">
+                    <img id="32" src="images/img32.jpg" onclick="addToCart(this.id);">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
